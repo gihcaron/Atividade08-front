@@ -134,6 +134,7 @@ body {
 
 .switch-button{
     font-size: 3rem;
+    color: #252448;
     background: none;
     border: none;
     cursor: pointer;
@@ -172,7 +173,7 @@ h2 span {
 }
 
 
-.new-user button, enter-btn {
+.new-user button{
     background-image: linear-gradient(to right, #FAFAFA, #dcdcdc);
     color: #252448;
     width: 15rem;
@@ -199,8 +200,17 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
+
+.midia-icons img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #FAFAFA;
+}
+
 
 img {
     width: 2rem;
@@ -209,6 +219,8 @@ img {
 }
 
 
+/* Container da direita */
+
 .right-container {
     display: flex;
     width: 70%;
@@ -216,6 +228,22 @@ img {
     align-items: center;
     justify-content: center;
 }
+
+.logar button {
+    position: fixed;
+    top: 6%;
+    right: 7%;
+    background: linear-gradient(to right, #FAFAFA, #dcdcdc);
+    color: #252448;
+    width: 15%;
+    height: 8%;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 100;
+}
+
 
 .password {
     display: flex;
@@ -262,5 +290,16 @@ input[type="checkbox"] {
 
 label {
     font-size: 1rem;
+    font-weight: bold;
+}
+
+.enter-btn {
+    background-image: linear-gradient(to right, #FAFAFA, #dcdcdc);
+    color: #252448;
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
