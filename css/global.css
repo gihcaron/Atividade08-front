@@ -76,11 +76,8 @@ body {
 
 
 .login {
-    background-color: rgba(168, 167, 167, 0.8);
-    /* background-image:linear-gradient(to Left, rgba(110, 110, 110, 0), rgba(0,0,0,0.2)), url('../media/img/background.png'); */
-    /* background-size: cover; */
+    position: relative;
     width: 60%;
-    backdrop-filter: blur(10px);
     height: 65vh;
     display: flex;
     flex-direction: row;
@@ -88,12 +85,28 @@ body {
     justify-content: center;
     font-size: 1.5rem;
     color: #252448;
-    border-radius: 45px;    
+    border-radius: 45px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(168, 167, 167, 0.8);
+    overflow: hidden;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../media/img/background.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.36;
+    z-index: -1; 
 }
 
 .left-container,
 .right-container {
-    flex:1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +117,7 @@ body {
 .left-container {
     backdrop-filter: blur(2px);
     margin-right: auto;
-    width: 30%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
