@@ -1,0 +1,25 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* definir rotas padrão */
+
+.root {
+    --bg-color: #FAFAFA;
+    --text-color: #252448;
+}
+
+
+
+
+
