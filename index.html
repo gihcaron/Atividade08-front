@@ -3,32 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
     <title>Login Page </title>
 
 </head>
 <body>
 
-    <img src="img/logo.png" alt="logo" class="logo">
+
+    <div class="background">
+
+    </div>
 
     <section class="login">
+        
+        <div class="left-container">
+            
+            <div class="text">
+                <h1> BEM VINDO </h1>
+                <h1>NOVO LOGIN</h1>
+            </div>
 
+            <div class="new-user">
+                <button type="button">CRIAR CONTA</button>
+            </div>
 
-        <div class="login-container">
+            <div class="midia-icons">
+                <img src="img/icon-facebook.png" alt="Facebook">
+                <img src="img/icon-google.png" alt="Google">
+                <img src="img/icon-linkedin.png" alt="Linkedin">
+            </div>
+
+        </div>
+
+        <div class="right-container">
+
             <div class="login-form">
-                <h1>Login</h1>
+                <h1>FAÇA LOGIN</h1>
                 <form action="">
                     <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="email">USUÁRIO</label>
+                        <input type="text" name="user" id="user" placeholder="USUÁRIO">
                     </div>
+
                     <div class="input-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password">
+                        <label for="password">SENHA</label>
+                        <input type="password" name="password" id="password" placeholder="DIGITE SUA SENHA">
                     </div>
-                    <button type="submit">Login</button>
+
+                    <div class="remember">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">LEMBRAR DE MIM</label>
+                    </div>
                 </form>
             </div>
+
+        <button type="submit">ENTRAR</button>
+
+        <div class="meida-icon">
+            <img src="img/icon-twitter.png" alt="Twitter">
+            <img src="img/icon-github.png" alt="Github">
+            <img src="img/icon-instagram.png" alt="Instagram">
+        </div>
+
 
 
 
