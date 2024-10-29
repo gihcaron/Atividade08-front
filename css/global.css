@@ -29,8 +29,17 @@ body {
 }
 
 .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     background-size: cover;
     z-index: -1;
+}
+
+.circle img{
+    position: absolute;
+
 }
 
 .pink  img{
@@ -66,18 +75,12 @@ body {
 }   
 
 
-.circle {
-    background-color: #FAFAFA;
-    width: 200px;
-    height: 100%;
-    border-radius: 50%;
-}
-
 .login {
-    background-color: #a8a7a7a1;
+    background-color: rgba(168, 167, 167, 0.8);
     /* background-image:linear-gradient(to Left, rgba(110, 110, 110, 0), rgba(0,0,0,0.2)), url('../media/img/background.png'); */
     /* background-size: cover; */
     width: 60%;
+    backdrop-filter: blur(10px);
     height: 65vh;
     display: flex;
     flex-direction: row;
@@ -85,12 +88,12 @@ body {
     justify-content: center;
     font-size: 1.5rem;
     color: #252448;
-    border-radius: 45px;
-    
+    border-radius: 45px;    
 }
 
 .left-container,
 .right-container {
+    flex:1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,21 +130,21 @@ h2 span {
 }
 
 
-.new-user {
-    margin-top: 5%;
-}
-
-button {
+.new-user button, enter-btn {
     background-image: linear-gradient(to right, #FAFAFA, #dcdcdc);
-    backdrop-filter: blur(4px);
     color: #252448;
     width: 15rem;
     height: 4rem;
     border: none;
-    border-radius: 45px;
+    border-radius: 40px;
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+.new-user {
+    margin-top: 5%;
+}
+
 
 button:hover {
     background-color: #FAFAFA;
@@ -180,25 +183,31 @@ img {
 }
 
 
-input {
-    width: 26rem;
+input[type="password"], input[type="text"] {
+    width: 19rem;
     height: 4rem;
     border-radius: 45px;
-    border: none;
-    padding: 1rem;
+    border:none;
+    padding: 0 1rem;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    text-align: center;
     color: #252448;
+    background-color:rgba(255, 255, 255, 0.8) ;
 }
 
+.toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 .remember {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     margin-bottom: 1rem;
 
 }
