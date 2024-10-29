@@ -74,6 +74,7 @@ body {
     top: 60%;
 }   
 
+/* Card para login */
 
 .login {
     position: relative;
@@ -91,6 +92,9 @@ body {
     overflow: hidden;
 }
 
+/* Blur,camadas e opacidade */
+/* O ::before adiciona a imagem como fundo da .login */
+
 .login::before {
     content: "";
     position: absolute;
@@ -105,13 +109,34 @@ body {
     z-index: -1; 
 }
 
+
 .left-container,
 .right-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
 
+.switch-container{
+    position: absolute;
+    left: 36%;
+    top:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 45px;
+    z-index: 100; 
+}
+
+.switch-button{
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .left-container {
@@ -132,10 +157,14 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 300;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 7rem;
+}
+
+h2{
+    font-weight: 600; 
 }
 
 h2 span {
